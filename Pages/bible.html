@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bible.css" />
+    <title>Bíblia</title>
+  </head>
+  <body>
+    <div id="hero">
+     <menu>
+      <button onclick="toggleDarkLightMode()" id="dark-light-mode">🌙</button>
+      </menu>
+    <div id="titles">
+    <h1>Bíblia Sagrada 📖</h1>
+    <h5>Tradução: Nova Versão Internacional (NVI)</h5>
+    </div>
+    <div id="selectors">
+    <select id="book"></select>
+    <select id="chapter"></select>
+    </div>
+    <div id="verses"></div>
+    </div>
+    <footer>
+    <p>Desenvolvido por <a href="https://github.com/zaquea">Zaque</a><br>Bíblia sem anúncios, totalmente gratuita e open-source</b></p>
+    <p>Créditos: <a href="https://github.com/thiagobodruk/biblia">Repositório dos arquivos JSON</a></p>
+  </footer>
+    <script src="bible.js"></script>
+  </body>
+</html>
