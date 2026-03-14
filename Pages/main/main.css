@@ -4,13 +4,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
   font-family: "DM Sans", sans-serif;
   background-color: rgb(94, 2, 2);
   color: chocolate;
 }
-.hero {
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  list-style: none;
+}
+.nav-links a {
+  color: chocolate;
+  text-decoration: none;
+  font-size: 18px;
+  border: 2px solid chocolate;
+  padding: 5px 10px;
+  border-radius: 12px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.nav-links a:hover {
+  background-color: chocolate;
+  color: #f0f0f0;
+}
+#hero {
   overflow: hidden;
   position: relative;
   color: chocolate;
@@ -62,7 +87,7 @@ body {
   cursor: pointer;
   box-shadow: white 0px 1px 8px -3px;
 }
-.features {
+#features {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -83,6 +108,60 @@ body {
 .feature h2 {
   margin-bottom: 15px;
 }
+#about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  align-items: stretch;
+}
+.sobre {
+  position: relative;
+  flex: 1 1 200px;
+  min-height: 200px;
+  max-width: 400px;
+  background-color: chocolate;
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+#about::after {
+  content: "";
+  position: absolute;
+  width: clamp(80px, 15vw, 200px);
+  height: clamp(80px, 12vw, 200px);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../../Img/bracket-curly-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+}
+#about::before {
+  content: "";
+  position: absolute;
+  width: clamp(80px, 15vw, 200px);
+  height: clamp(80px, 12vw, 200px);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scaleX(-1);
+  background-image: url("../../Img/bracket-curly-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+#about h2 {
+  margin-bottom: 20px;
+}
+#about span {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
 footer {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -100,7 +179,11 @@ h1 {
   font-size: 48px;
   margin-bottom: 20px;
 }
-
+#error-message {
+  color: red;
+  margin-top: 29px;
+  font-size: 14px;
+}
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
@@ -128,5 +211,8 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
-
+  .about::after,
+  .about::before {
+    display: none;
+  }
 }
