@@ -7,7 +7,7 @@ const versesContainer = document.getElementById("verses");
 
 
 async function loadBible() {
-  const response = await fetch("../Json/nvi.json");
+  const response = await fetch("../../../Json/nvi.json");
   bible = await response.json();
 
   loadBooks();
