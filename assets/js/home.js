@@ -8,7 +8,7 @@ function chooseVersion() {
 
     setTimeout(function () {
       error.textContent = "";
-    }, 1000);
+    }, 5000);
 
     return;
   }
@@ -16,5 +16,5 @@ function chooseVersion() {
   error.textContent = "";
 
   localStorage.setItem("selectedVersion", version);
-  window.location.href = `../bible-versions/${version}/bible.html`;
+  window.location.href = `../../pages/bible/bible.html?v=${version}`;
 }

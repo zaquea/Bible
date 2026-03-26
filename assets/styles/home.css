@@ -10,15 +10,22 @@ html {
 body {
   overflow-x: hidden;
   font-family: "DM Sans", sans-serif;
-  background-color: rgb(94, 2, 2);
-  color: chocolate;
+  background-color: rgb(94, 2, 2); /* hex #5e0202 /* rgb(94, 2, 2) */
+  color: chocolate; /* hex #d2691e /* rgb(210, 105, 30) */
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 20px;
 }
 .nav-links {
   display: flex;
-  justify-content: center;
   gap: 20px;
-  padding: 20px;
   list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .nav-links a {
   color: chocolate;
@@ -34,6 +41,15 @@ body {
 .nav-links a:hover {
   background-color: chocolate;
   color: #f0f0f0;
+}
+.nav-div-logo {
+  display: flex;
+  justify-content: left;
+}
+.nav-logo {
+  width: 100px;
+  height: auto;
+  display: block;
 }
 #hero {
   overflow: hidden;
@@ -56,7 +72,7 @@ body {
 }
 .hero-right {
   width: 50%;
-  background-image: url("../../Img/bible.svg");
+  background-image: url("../../assets/images/bible.svg");
   background-position: center;
   background-size: 90%;
   background-repeat: no-repeat;
@@ -136,7 +152,7 @@ body {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url("../../Img/bracket-curly-right.svg");
+  background-image: url("../../assets/images/bracket-curly-right.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -150,7 +166,7 @@ body {
   left: 0;
   top: 50%;
   transform: translateY(-50%) scaleX(-1);
-  background-image: url("../../Img/bracket-curly-right.svg");
+  background-image: url("../../assets/images/bracket-curly-right.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -214,5 +230,19 @@ h1 {
   .about::after,
   .about::before {
     display: none;
+  }
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-links {
+      position: static; /* REMOVE o absolute */
+      transform: none;
+      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

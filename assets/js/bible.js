@@ -1,5 +1,7 @@
 let bible = [];
 
+const version = getVersion();
+
 const bookSelect = document.getElementById("book");
 const chapterSelect = document.getElementById("chapter");
 const versesContainer = document.getElementById("verses");
@@ -7,12 +9,13 @@ const versesContainer = document.getElementById("verses");
 
 
 async function loadBible() {
-  const response = await fetch("../../../Json/nvi.json");
+  const version = getVersion();
+
+  const response = await fetch(`../../data/bibles/${version}.json`);
   bible = await response.json();
 
   loadBooks();
 }
-
 
 
 function loadBooks() {
