@@ -3,6 +3,10 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
+base {
+    archivesName = "BibliaYou-v0.1.0-beta"
+}
+
 android {
     namespace = "com.zaquea.bibliayou"
     compileSdk {
@@ -16,7 +20,7 @@ android {
         minSdk = 24
         targetSdk = 36
         versionCode = 1
-        versionName = "1.0"
+        versionName = "0.1.0-beta"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
