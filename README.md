@@ -1,5 +1,7 @@
 
-# ✨ Bíblia You
+<p align="center">
+  <img src="./assets/images/logo.png" width="200">
+</p>
 
 <p align="center">
   <b>Uma nova forma de ler a Bíblia — simples, moderna e sem anúncios.</b>
