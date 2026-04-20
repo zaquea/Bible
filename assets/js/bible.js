@@ -12,7 +12,14 @@ async function loadBible() {
   const version = getVersion();
 
   const response = await fetch(`../../data/bibles/${version}.json`);
-  bible = await response.json();
+  let data = await response.json();
+
+  // formato novo do json
+  if (data.books) {
+    data = convertToOldFormat(data);
+  }
+
+  bible = data;
 
   loadBooks();
 }
@@ -73,13 +80,20 @@ function showVerses() {
 }
 
 
-
 bookSelect.addEventListener("change", loadChapters);
 chapterSelect.addEventListener("change", showVerses);
 
 
-
 loadBible();
+
+function convertToOldFormat(newBible) {
+  return newBible.books.map((book) => ({
+    name: book.name,
+    chapters: book.chapters.map((chapter) =>
+      chapter.verses.map((verse) => verse.text)
+    )
+  }));
+}
 
 function toggleDarkLightMode() {
   document.body.classList.toggle("dark-mode");

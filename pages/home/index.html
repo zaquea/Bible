@@ -29,6 +29,18 @@
             <li><a href="#features">Recursos</a></li>
             <li><a href="#about">Sobre</a></li>
           </ul>
+          <div class="nav-toggle">
+            <button
+              class="btn-ham"
+              aria-label="Abrir menu"
+              aria-expanded="false"
+              aria-controls="menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -44,11 +56,14 @@
                   <option value="" selected disabled>Escolha uma versão</option>
                   <option value="nvi">Nova Versão Internacional (NVI)</option>
                   <option value="acf">Almeida Corrigida e Fiel (ACF)</option>
-                  <option value="aa">Almeida Revisada Imprensa Bíblica (AA)</option>
+                  <option value="aa">
+                    Almeida Revisada Imprensa Bíblica (AA)
+                  </option>
+                  <option value="kjv">King James Version (KJV)</option>
                 </select>
                 <button onclick="chooseVersion()" id="explore-btn">Ler</button>
-                <p id="error-message"></p>
               </div>
+              <p id="error-message"></p>
             </div>
           </div>
           <div class="hero-right"></div>
@@ -56,14 +71,18 @@
       </section>
       <section id="features">
         <div class="feature">
-          <h2><i class="fa-solid fa-star"></i>Nosso propósito</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <h2><i class="fa-solid fa-star"></i> Nosso propósito</h2>
+          <p>
+            Distribuir a palavra de Deus sem interrupções e do jeito certo, de
+            modo rápido e fácil, sem assinaturas nem complicações
+          </p>
         </div>
         <div class="feature">
           <h2>Versões e Recursos</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo
-            veniam enim
+            Nós temos, atualmente, as seguintes versões da Bíblia disponíveis:
+            <span>NVI</span>, <span>ACF</span> e <span>AA*</span>. Estamos
+            trabalhando para adicionar mais versões e recursos, como anotações
           </p>
         </div>
       </section>
@@ -81,7 +100,7 @@
     <footer>
       <p>
         Desenvolvido por <a href="https://github.com/zaquea">Zaque</a
-        ><br />Bíblia sem anúncios, totalmente gratuita e open-source
+        ><br />Bíblia open-source
       </p>
       <p>
         Créditos:
