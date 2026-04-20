@@ -4,7 +4,7 @@ plugins {
 }
 
 base {
-    archivesName = "BibliaYou-v0.1.0-beta"
+    archivesName = "BibliaYou-v0.2.0-beta"
 }
 
 android {

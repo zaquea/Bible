@@ -13,7 +13,7 @@
       "attributes": [],
       "versionCode": 1,
       "versionName": "0.1.0-beta",
-      "outputFile": "BibliaYou-v0.1.0-beta-release.apk"
+      "outputFile": "BibliaYou-v0.2.0-beta-release.apk"
     }
   ],
   "elementType": "File",
@@ -22,14 +22,14 @@
       "minApi": 28,
       "maxApi": 30,
       "baselineProfiles": [
-        "baselineProfiles/1/BibliaYou-v0.1.0-beta-release.dm"
+        "baselineProfiles/1/BibliaYou-v0.2.0-beta-release.dm"
       ]
     },
     {
       "minApi": 31,
       "maxApi": 2147483647,
       "baselineProfiles": [
-        "baselineProfiles/0/BibliaYou-v0.1.0-beta-release.dm"
+        "baselineProfiles/0/BibliaYou-v0.2.0-beta-release.dm"
       ]
     }
   ],
