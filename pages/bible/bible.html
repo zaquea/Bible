@@ -7,27 +7,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../assets/styles/bible.css" />
-    <title>Bíblia You | NVI</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../assets/images/favicon_io/192favicon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../assets/images/favicon_io/apple-touch-icon.png"
+    />
+    <title>Bíblia You</title>
   </head>
   <body>
     <div id="hero">
-     <menu>
-      <button onclick="toggleDarkLightMode()" id="dark-light-mode">🌙</button>
+      <menu>
+        <button onclick="toggleDarkLightMode()" id="dark-light-mode">🌙</button>
       </menu>
-    <div id="titles">
-    <h1>Bíblia Sagrada 📖</h1>
-    <h5>Tradução: Nova Versão Internacional (NVI)</h5>
-    </div>
-    <div id="selectors">
-    <select id="book"></select>
-    <select id="chapter"></select>
-    </div>
-    <div id="verses"></div>
+      <div id="titles">
+        <h1>Bíblia Sagrada 📖</h1>
+        <h5>Tradução: Nova Versão Internacional (NVI)</h5>
+      </div>
+      <div id="selectors">
+        <select id="book"></select>
+        <select id="chapter"></select>
+      </div>
+      <div id="verses"></div>
     </div>
     <footer>
-    <p>Desenvolvido por <a href="https://github.com/zaquea">Zaque</a><br>Bíblia sem anúncios, totalmente gratuita e open-source</p>
-    <p>Créditos: <a href="https://github.com/thiagobodruk/biblia">Repositório dos arquivos JSON</a></p>
-  </footer>
+      <p>
+        Desenvolvido por <a href="https://github.com/zaquea">Zaque</a
+        ><br />Bíblia open-source
+      </p>
+      <p>
+        Créditos:
+        <a href="https://github.com/thiagobodruk/biblia" target="_blank"
+          >Thiago Bodruk</a
+        >
+        e
+        <a href="https://github.com/gustavo-bordin/biblia-json" target="_blank"
+          >Gustavo Bordin</a
+        >
+      </p>
+    </footer>
     <script src="../../assets/js/utils.js"></script>
     <script src="../../assets/js/bible.js"></script>
   </body>

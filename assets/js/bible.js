@@ -6,8 +6,6 @@ const bookSelect = document.getElementById("book");
 const chapterSelect = document.getElementById("chapter");
 const versesContainer = document.getElementById("verses");
 
-
-
 async function loadBible() {
   const version = getVersion();
 
@@ -24,7 +22,6 @@ async function loadBible() {
   loadBooks();
 }
 
-
 function loadBooks() {
   bookSelect.innerHTML = "";
 
@@ -39,8 +36,6 @@ function loadBooks() {
 
   loadChapters();
 }
-
-
 
 function loadChapters() {
   const bookIndex = bookSelect.value;
@@ -60,8 +55,6 @@ function loadChapters() {
   showVerses();
 }
 
-
-
 function showVerses() {
   const bookIndex = bookSelect.value;
   const chapterIndex = chapterSelect.value;
@@ -79,10 +72,8 @@ function showVerses() {
   });
 }
 
-
 bookSelect.addEventListener("change", loadChapters);
 chapterSelect.addEventListener("change", showVerses);
-
 
 loadBible();
 
@@ -90,14 +81,14 @@ function convertToOldFormat(newBible) {
   return newBible.books.map((book) => ({
     name: book.name,
     chapters: book.chapters.map((chapter) =>
-      chapter.verses.map((verse) => verse.text)
-    )
+      chapter.verses.map((verse) => verse.text),
+    ),
   }));
 }
 
 function toggleDarkLightMode() {
   document.body.classList.toggle("dark-mode");
-  document.querySelector("button")
-    .textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-    document.body.classList.toggle("light-mode");
+  document.querySelector("button").textContent =
+    document.body.classList.contains("dark-mode") ? "🌙" : "☀️";
+  document.body.classList.toggle("light-mode");
 }
