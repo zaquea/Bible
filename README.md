@@ -16,7 +16,7 @@
 
 ---
 
-## 📖 Sobre
+## Sobre
 
 O **Bíblia You** é um projeto criado com o objetivo de oferecer uma experiência moderna e fluida de leitura da Bíblia, tanto no navegador quanto em dispositivos móveis.
 
@@ -25,25 +25,25 @@ A proposta é simples:
 
 ---
 
-## 🚀 Destaques
+## Destaques
 
-- ⚡ Leve, rápido e direto ao ponto  
-- 📱 Disponível como **Site e APK**  
-- 🎯 Interface limpa e agradável  
-- 📚 Múltiplas versões da Bíblia  
-- 💡 Pensado para evolução contínua  
-
----
-
-## 📚 Versões disponíveis
-
-- 📖 Almeida Revisada Impressa Bíblica (**AA**)  
-- 📖 Almeida Corrigida Fiel (**ACF**)  
-- 📖 Nova Versão Internacional (**NVI**)  
+- Leve, rápido e direto ao ponto  
+- Disponível como **Site e APK**  
+- Interface limpa e agradável  
+- Múltiplas versões da Bíblia  
+- Pensado para evolução contínua  
 
 ---
 
-## 🖥️ Acesse
+## Versões disponíveis
+
+- Almeida Revisada Impressa Bíblica (**AA**)  
+- Almeida Corrigida Fiel (**ACF**)  
+- Nova Versão Internacional (**NVI**)  
+
+---
+
+## Acesse
 
 <p align="center">
   <a href="https://zaquea.github.io/Bible/"><b>🌐 Ver site</b></a> •
@@ -52,7 +52,7 @@ A proposta é simples:
 
 ---
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 ```bash
 HTML • CSS • JavaScript
@@ -60,7 +60,7 @@ HTML • CSS • JavaScript
 
 ---
 
-## 📸 Preview
+## Preview
 
 **💻 Desktop**
 <p align="center"> <img src="./desktop.png" width="800"> </p>
@@ -70,7 +70,7 @@ HTML • CSS • JavaScript
 
 ---
 
-## ⚙️ Como rodar
+## Como rodar
 
 ```bash
 # Clone o projeto
@@ -85,7 +85,7 @@ index.html
 
 ---
 
-## 📦 Créditos
+## Créditos
 
 Os dados das Escrituras foram obtidos a partir de:
 
@@ -93,7 +93,7 @@ Os dados das Escrituras foram obtidos a partir de:
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 <p align="center">
   Feito com dedicação por <b>Zaque</b> ✨
@@ -101,15 +101,14 @@ Os dados das Escrituras foram obtidos a partir de:
 
 ---
 
-## 🔮 Futuro do projeto
+## Futuro do projeto
 
 O Bíblia You ainda está evoluindo. Algumas ideias futuras:
 
-* 🌙 Modo escuro
-* 🔎 Busca inteligente de versículos
-* ❤️ Sistema de favoritos
-* 📅 Versículo do dia
-* 🔔 Notificações no app
+* Busca inteligente de versículos
+* Sistema de favoritos
+* Versículo do dia
+* Notificações no app
 
 ---
 
