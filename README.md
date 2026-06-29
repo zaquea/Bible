@@ -131,6 +131,6 @@ Se esse projeto te ajudou ou te inspirou:
 ---
 
 <p align="center">
-  <b>"Lâmpada para os meus pés é a tua palavra..."</b> ✨
+  <b>"Lâmpada para os meus pés é a tua palavra..."</b>
 </p>
 ```
